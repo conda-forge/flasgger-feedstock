@@ -14,12 +14,15 @@ Summary: Easy Swagger UI for your Flask API
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/flasgger-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/flasgger-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/flasgger-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/flasgger-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/flasgger/badges/version.svg)](https://anaconda.org/conda-forge/flasgger)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/flasgger/badges/downloads.svg)](https://anaconda.org/conda-forge/flasgger)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-flasgger-green.svg)](https://anaconda.org/conda-forge/flasgger) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/flasgger.svg)](https://anaconda.org/conda-forge/flasgger) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/flasgger.svg)](https://anaconda.org/conda-forge/flasgger) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/flasgger.svg)](https://anaconda.org/conda-forge/flasgger) |
 
 Installing flasgger
 ===================
