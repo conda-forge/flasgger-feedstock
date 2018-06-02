@@ -1,6 +1,6 @@
 {% set name = "flasgger" %}
-{% set version = "0.8.3" %}
-{% set md5 = "3edc98923ceb1d885e4a9266776653a2" %}
+{% set version = "0.9.0" %}
+{% set md5 = "4e0397a4933cd41fee2c8b2d41e74d27" %}
 
 package:
   name: {{ name|lower }}
