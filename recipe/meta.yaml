@@ -23,7 +23,7 @@ requirements:
     - setuptools
   run:
     - flask >=0.10
-    - jsonschema >=2.5.1
+    - jsonschema >=2.5.1,<3.0.0
     - mistune
     - python
     - pyyaml >=3.0
