@@ -1,5 +1,5 @@
 {% set name = "flasgger" %}
-{% set version = "0.9.4" %}
+{% set version = "0.9.5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 37137b3292738580c42e03662bfb8731656a11d636e76f76d30e572c1fa5bd0d
+  sha256: 6ebea406b5beecd77e8da42550f380d4d05a6107bc90b69ce9e77aee7612e2d0
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -38,7 +38,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Easy Swagger UI for your Flask API'
+  summary: Easy Swagger UI for your Flask API
 
 extra:
   recipe-maintainers:

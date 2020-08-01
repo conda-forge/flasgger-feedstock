@@ -5,7 +5,7 @@ Home: https://github.com/rochacbruno/flasgger
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Easy Swagger UI for your Flask API
 
