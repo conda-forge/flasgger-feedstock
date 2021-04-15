@@ -11,7 +11,7 @@ source:
   sha256: 6ebea406b5beecd77e8da42550f380d4d05a6107bc90b69ce9e77aee7612e2d0
 
 build:
-  noarch: python >=2.7
+  noarch: python >=3.6
   number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -24,7 +24,7 @@ requirements:
     - flask >=0.10
     - jsonschema >=3.0.1
     - mistune
-    - python >=2.7
+    - python >=3.6
     - pyyaml >=3.0
     - six >=1.10.0
 
