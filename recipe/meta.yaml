@@ -17,14 +17,14 @@ build:
 
 requirements:
   build:
-    - python >=2.7
+    - python 2.7|>=3.6
     - pip
     - setuptools
   run:
     - flask >=0.10
     - jsonschema >=3.0.1
     - mistune
-    - python >=2.7
+    - python 2.7|>=3.6
     - pyyaml >=3.0
     - six >=1.10.0
 
