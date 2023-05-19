@@ -1,5 +1,5 @@
 {% set name = "flasgger" %}
-{% set version = "0.9.5" %}
+{% set version = "0.9.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,15 +8,15 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6ebea406b5beecd77e8da42550f380d4d05a6107bc90b69ce9e77aee7612e2d0
+  sha256: ca098e10bfbb12f047acc6299cc70a33851943a746e550d86e65e60d4df245fb
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
+  host:
     - python 2.7|>=3.6
     - pip
     - setuptools
