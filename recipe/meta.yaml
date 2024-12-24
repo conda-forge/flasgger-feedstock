@@ -7,29 +7,31 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: ca098e10bfbb12f047acc6299cc70a33851943a746e550d86e65e60d4df245fb
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python 2.7|>=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
     - flask >=0.10
     - jsonschema >=3.0.1
     - mistune
-    - python 2.7|>=3.6
+    - python >={{ python_min }}
     - pyyaml >=3.0
     - six >=1.10.0
 
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - flasgger
 
